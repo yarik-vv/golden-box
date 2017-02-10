@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="css/shared/icon.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/shared/owl.carousel.min.css">
+   <link rel="stylesheet" type="text/css" href="css/main.min.css">
+   <link rel="stylesheet" type="text/css" href="css/shared/bootstrap.min.css">
+   <script src="js/shared/jquery-2.2.1.min.js" type="text/javascript"></script>
+   <script src="js/shared/owl.carousel.min.js" type="text/javascript"></script>
+   <script src="js/shared/bootstrap.min.js"></script>
+   <script src="js/shared/angular.min.js"></script>
+   <script src="js/shared/angular-route.min.js"></script>
+   <script src="js/shared/google.min.js"></script>
+   <script src="js/shared/vk.min.js"></script>
+   <script type="text/javascript">
+      VK.init({
+         apiId: 5528261,
+         onlyWidgets: true
+      });
+   </script>
+</head>
+<body ng-app="MainApp" ng-controller="GamesController">
+   <div class="container-fluid">
+      <!-- start header -->
+      <div class="karkaz row" id="header">
+         <div id="mobile-logo">
+            <a href="#/">
+               <img src="img/logo-mobile.png">
+            </a>
+         </div>
+         <div class="left"></div>
+         <div class="content" id="header-content">
+            <img src="img/sunduk-logo.png">
+            <img id="logo" src="img/logo.png">
+            <div class="kontaktu">
+               <p>Время работы:</p>
+               <div>
+                  <span class="glyphicon glyphicon-time"></span>
+                  <p>10:00-23:00</p>
+               </div>
+               <p>Контакты:</p>
+               <a href="skype:live:goldenboxsite?chat">
+                  <span class="socicon-skype"></span>
+                  <p>Связь Skype</p>
+               </a>
+               <a href="https://vk.com/goldenboxorg">
+                  <span class="socicon-vkontakte"></span>
+                  <p>Группа VK</p>
+               </a>
+               <div>
+                  <span class="socicon-icq"></span>
+                  <p>474-402</p>
+               </div>
+            </div>
+            <img id="hero" src="img/hero-top.png">
+         </div>
+         <div class="right"></div>
+      </div>
+      <!-- end header -->
+      <!-- start main -->
+      <div class="karkaz row">
+         <div id="left" class="left"></div>
+         <div class="content">
+            <!-- left panel -->
+            <div id="left-panel" class="col-sm-3">
+               <nav class="navbar navbar-default oval" id="menu-spisok">
+                  <div class="navbar-header">
+                     <img src="img/scroll.png"> Список игр
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#spisok" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                  </div>
+               </nav>
+               <div id="scroll">
+                  <img src="img/scroll.png">
+               </div>
+               <div class="collapse navbar-collapse list-group oval" id="spisok">
+                  <ul>
+                     <li>
+                        <div id="sortirovka">
+                           <div id="rating" ng-click="reverse=false; predicate='rating'">По рейтингу</div>
+                           <div id="alfavit" ng-click="reverse=false; predicate='title'">По алфавиту</div>
+                        </div>
+                     </li>
+                     <li>
+                        <a ng-repeat="game in games| orderBy:predicate:reverse" href="#/game/{{game.rating}}" class="list-group-item">
+                           {{game.title}}
+                           <img src="img/left-line.png" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div id="google_translate_element" class="oval"></div>
+               <div id="vk_groups"></div>
+            </div>
+            <!-- end left panel -->
+            <!-- center panel -->
+            <div class="col-sm-9">
+               <nav class="navbar navbar-default" id="menu">
+                  <ul class="nav navbar-nav main-nav">
+                     <li><a href="#/">Главная</a></li>
+                     <li><img src="img/top-line.png" alt=""></li>
+                     <li><a href="#/novosti">Новости</a></li>
+                     <li><img src="img/top-line.png" alt=""></li>
+                     <li><a href="#/garantii">Гарантии</a></li>
+                     <li><img src="img/top-line.png" alt=""></li>
+                     <li><a href="#/postavshikam">Поставщикам</a></li>
+                     <li><img src="img/top-line.png" alt=""></li>
+                     <li><a href="#/kontaktu">Контакты</a></li>
+                  </ul>
+               </nav>
+               <div id="view" ng-view></div>
+            </div>
+            <!-- end center panel -->
+         </div>
+         <!-- end content  -->
+         <div id="right-panel" class="right"></div>
+      </div>
+      <!-- end main  -->
+      <!-- start footer  -->
+      <div class="karkaz row" id="footer">
+         <div class="left"></div>
+         <div class="content">
+            <div class="col-sm-12">
+               <div class="col-sm-3">
+                  <img src="img/footer-logo.png" class="img-responsive">
+               </div>
+               <div class="col-sm-1">
+                  <ul class="nav">
+                     <li><a href="#/">Главная</a></li>
+                     <li><a href="#/novosti">Новости</a></li>
+                     <li><a href="#/garantii">Гарантии</a></li>
+                     <li><a href="#/postavshikam">Поставщикам</a></li>
+                     <li><a href="#/kontaktu">Контакты</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-5">
+                  <img src="img/hero-bot.png" alt="" class="img-responsive">
+               </div>
+               <div class="col-sm-1" id="social">
+                  <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=305748853214"><img src="img/webmoney.png" alt=""></a>
+                  <a href="https://money.yandex.ru/new"><img src="img/yandex.png" alt=""></a>
+                  <a href="https://qiwi.com/"><img src="img/qiwi.png" alt=""></a>
+               </div>
+               <div class="col-sm-2">
+                  <div class="kontaktu">
+                     <div>
+                        <p id="time">Время работы:</p>
+                        <div>
+                           <span class="glyphicon glyphicon-time"></span>
+                           <p>с 10:00 до 23:00</p>
+                        </div>
+                     </div>
+                     <a href="sskype:live:goldenboxsite?chat">
+                        <span class="socicon-skype"></span>
+                        <p>Связь Skype</p>
+                     </a>
+                     <a href="https://vk.com/goldenboxorg">
+                        <span class="socicon-vkontakte"></span>
+                        <p>Группа VK</p>
+                     </a>
+                     <div>
+                        <span class="socicon-icq"></span>
+                        <p>474-402</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="right"></div>
+      </div>
+      <!-- end footer  -->
+   </div>
+   <!-- end container-fluid -->
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+         new google.translate.TranslateElement({
+            pageLanguage: 'ru'
+         }, 'google_translate_element');
+      }
+      VK.Widgets.Group("vk_groups", {
+         mode: 1,
+         width: "auto",
+         height: "250",
+         color1: '693919',
+         color2: 'FDFDFD',
+         color3: 'dfa31b'
+      }, 127618522);
+   </script>
+   
+   <!-- Modules -->
+   <script src="js/app.js"></script>
+   <!-- Controllers -->
+   <script src="js/controllers/GamesController.js"></script>
+   <script src="js/controllers/GameController.js"></script>
+   <!-- Services -->
+   <script src="js/services/game.js"></script>
+</body>
+</html>

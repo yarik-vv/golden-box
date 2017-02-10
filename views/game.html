@@ -1,0 +1,94 @@
+<div id="description" class="panel panel-default">
+      <div class="panel-heading">
+         Покупка {{detail.valuta}} в игре {{detail.title}}
+      </div>
+      <div class="panel-body">
+         <p>Наш сайт принимает заказы круглосуточно! Если заказ был оформлен в нерабочее время - его выполнят утром. Доставка игровой валюты занимает от 5 минут до 24 часов (обычно 5 - 30 минут). При больших заказах доставка может производиться частями. По правилам сервера игры возможно запрещена покупка и продажа игровой валюты. Для гарантировано безопасной сделки рекомендуется не входить в контакты с отправителем. Сайт не несет ответственности за нарушение правил сервера игроками. Мы делаем все для максимально безопасной и комфортной доставки игровой валюты.</p>
+      </div>
+</div>
+
+<div id="sunduk">
+   <div class="col-sm-6">
+      <p>Сервер:
+         <select ng-model="model.selectedCategory" ng-options="server as server.name for server in detail.servers">
+            <option value="" disabled >Выберите сервер</option>
+         </select>
+      </p>
+      <p>Способ доставки:
+         <select>
+            <option disabled selected>Выберите способ доставки</option>
+            <option ng-repeat="dostavka in detail.dostavka">{{dostavka.sposob}}</option>
+         </select>
+      </p>
+      <p>Ник персонажа:
+         <input type="text" placeholder="Введите ник персонажа">
+      </p>
+      <p class="col-sm-6">Получу:
+         <input type="text" ng-model="model.name">
+      </p>
+      <div class="col-sm-6">Заплачу:
+         <div id="rezultat">
+            <div ng-show="model.selectedCategory">
+               <p type="text" ng-show="model.name">{{model.name*model.selectedCategory.cena}}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-sm-6">
+      <p>Сторона:
+         <select>
+            <option disabled selected>Выберите сторону</option>
+            <option ng-repeat="storona in detail.storonu">{{storona.name}}</option>
+         </select>
+      </p>
+      <p>Електронный адрес:
+         <input type="text" placeholder="Введите ваш e-mail">
+      </p>
+      <p>Контактные данные:
+         <input type="text" placeholder="Введите ваш vk, skype и т.п.">
+      </p>
+      <p>Способ оплаты
+         <select>
+            <option disabled selected>Выберите способ оплаты</option>
+            <option>Qiwi Кошелек (без комиссии)</option>
+            <option>Яндекс деньги (без комиссии)</option>
+            <option>WebMoney</option>
+            <option>Visa/MasterCard</option>
+         </select>
+      </p>
+   </div>
+   <div id="zakazat"> 
+      <button type="button" class="btn btn-success">Отправить заказ <span id="gotovo"></span></button>
+   </div> 
+</div>
+
+<div class="panel panel-default">
+   <div class="panel-heading">Цены на игровую валюту {{detail.title}}</div>
+   <table class="table">
+      <thead>
+         <tr>
+            <th>Сервер</th>
+            <th>Цена 1 {{detail.valuta}}</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr ng-repeat="server in detail.servers">
+            <th scope="row">{{server.name}}</th>
+            <td>{{server.cena}} руб</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<script type="text/javascript">
+   $.MenuChoise(0,0);
+</script>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+
+
+
+
+     
