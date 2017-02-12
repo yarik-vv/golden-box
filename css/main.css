@@ -1,19 +1,4 @@
-@font-face { 
-   font-family: OpenSans-Semibold; 
-   src: local("OpenSans-Semibold"), url(../fonts/OpenSans-Semibold.ttf); 
-}
-@font-face{ 
-   font-family: PTSans-Web-Bold;  
-   src: local("PTSans-Web-Bold"), url(../fonts/PTSans-Web-Bold.ttf); 
-}
-@font-face{ 
-   font-family: OpenSans-Regular;  
-   src: local("OpenSans-Regular"), url(../fonts/OpenSans-Regular.ttf); 
-}
-@font-face{ 
-   font-family: OpenSans-Bold;  
-   src: local("OpenSans-Bold"), url(../fonts/OpenSans-Bold.ttf); 
-}
+@import url(fonts.css);
 
 /*-------------------karkaz----------------------*/
 .karkaz{
