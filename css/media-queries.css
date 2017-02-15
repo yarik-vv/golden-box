@@ -139,16 +139,6 @@
    .kontaktu span{
       display: inline;
    }
-   .panel-body{
-      padding: 10px !important;
-   }
-   #novosti,
-   #otzivi{
-      width: 100%;
-      margin-left: 0.1%;
-      margin-right: 0.1%;
-      margin-bottom: 10px;
-   }
    .list-group ul li a {
       margin: 10px;
    }

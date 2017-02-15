@@ -3,24 +3,24 @@ app.config(function ($routeProvider) {
    $routeProvider
       .when('/', {
          controller: "GamesController",
-         templateUrl: "/views/games/games.html"
+         templateUrl: "views/games/games.html"
       })
       .when('/game/:id', {
          controller: "GameController",
-         templateUrl: "/views/game/game.html"
+         templateUrl: "views/game/game.html"
       })
       .when('/garantii', {
-         templateUrl: "/views/garantii/garantii.html"
+         templateUrl: "views/garantii/garantii.html"
       })
       .when('/novosti', {
-         templateUrl: "/views/novosti/novosti.html"
+         templateUrl: "views/novosti/novosti.html"
       })
       .when('/postavshikam', {
          controller: "GamesController",
-         templateUrl: "/views/postavshikam/postavshikam.html"
+         templateUrl: "views/postavshikam/postavshikam.html"
       })
       .when('/kontaktu', {
-         templateUrl: "/views/kontaktu/kontaktu.html"
+         templateUrl: "views/kontaktu/kontaktu.html"
       })
 });
 
@@ -43,11 +43,11 @@ $(document).ready(function () {
 
    if (window.matchMedia("(min-width: 767px)").matches) {
       $('a').click(function () {
-         document.getElementById('right-panel').style.background = 'url(../img/background.jpg) center top no-repeat';
+         document.getElementById('right-panel').style.background = 'url(img/background.jpg) center top no-repeat';
          document.getElementById('right-panel').style.backgroundAttachment = "fixed";
-         document.getElementById('left-panel').style.background = 'url(../img/background.jpg) center top no-repeat';
+         document.getElementById('left-panel').style.background = 'url(img/background.jpg) center top no-repeat';
          document.getElementById('left-panel').style.backgroundAttachment = "fixed";
-         document.getElementById('left').style.background = 'url(../img/background.jpg) center top no-repeat';
+         document.getElementById('left').style.background = 'url(img/background.jpg) center top no-repeat';
          document.getElementById('left').style.backgroundAttachment = "fixed";
          document.getElementById('logo').src = "img/logo.png";
       });

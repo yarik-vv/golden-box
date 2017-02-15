@@ -115,3 +115,16 @@
    padding-left: 2%;
    padding-right: 2%;
 }
+
+@media (max-width: 767px){
+   .panel-body{
+      padding: 10px !important;
+   }
+   #novosti{
+      width: 100%;
+      padding:0;
+      margin-left: 0.1%;
+      margin-right: 0.1%;
+      margin-bottom: 10px;
+   }
+}

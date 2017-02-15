@@ -5,7 +5,7 @@
    padding-bottom: 8%;
    padding-left: 10%;
    padding-right: 10%;
-   background-image: url(/img/sunduk.jpg);
+   background-image: url(../../img/sunduk.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
@@ -75,7 +75,6 @@
    text-align: center;
 }
 
-/*-------------------tablica-------------------*/
 tbody tr:last-child td,
 tbody tr:last-child th{
    border-bottom: none !important;
