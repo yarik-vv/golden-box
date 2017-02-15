@@ -1,0 +1,117 @@
+.kontaktu{
+   color: #693919;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   font-family: OpenSans-Regular, sans-serif !important;
+}
+
+.kontaktu span,
+.kontaktu p{
+   display: inline-block;
+   padding: 0px;
+   margin: 0px;
+}
+
+.kontaktu a,
+.kontaktu a:visited{
+   color: #693919 !important;
+   text-decoration: none !important;
+}
+
+.kontaktu a:hover{
+   color: #dfa31b !important;
+}
+
+.kontaktu span{
+   font-size: 20px;
+}
+
+.kontaktu p{
+   position: relative;
+   font-size: 15px;
+   top: -4px;
+}
+
+.kontaktu a,
+.kontaktu div{
+   text-align: left !important;
+   color: #693919;
+}
+
+.oval {
+     border-radius: 13px !important;
+}
+
+.panel{
+   font-family: OpenSans-Semibold, sans-serif !important;
+   color: #333333;
+   font-size: 14px;
+   box-shadow: 0.5px 0.5px 0.5px 0px rgba(0,0,0,0.5) !important;
+   border: none !important;
+   margin-bottom: 10px !important;
+}
+
+.panel-heading{
+   font-family: PTSans-Web-Bold, sans-serif !important;
+   border-radius: 20px !important;
+   border-bottom-left-radius: 0px !important;
+   border-bottom-right-radius: 0px !important;
+   padding: 8px 15px;
+   font-size: 18px;
+   background: #693919 !important;
+   color: white !important;
+   text-shadow: 2px 1px 1px #000;
+}
+
+.panel-default{
+   border-radius: 20px !important;
+   background-color: gainsboro !important;
+}
+
+.panel-body{
+   padding: 10px !important;
+   padding-left: 20px !important;
+   padding-right: 20px !important;
+   text-align: justify;
+   border-radius:20px !important;
+   border-bottom: 3px solid #dfa31b !important;
+}
+
+.panel-body ol{
+  padding-left: 16px !important;
+}
+
+.panel-body a{
+   text-decoration: none !important;
+   color: #693919;
+}
+
+.panel-body a:hover{
+   color: #dfa31b;
+}
+
+.panel-body .thumbnail{
+   background-color: #693919;
+   padding: 10px;
+   padding-top: 15px;
+   border: none;
+   border-radius: 9px;
+   margin-bottom: 0px;
+   padding-bottom: 2px;
+   font-size: 14.5px;
+   font-family: PTSans-Web-Bold, sans-serif !important;
+   color: #693919;
+}
+
+#novosti{
+   padding-left: 2%;
+   padding-right: 2%;
+}

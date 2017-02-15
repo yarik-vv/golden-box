@@ -1,0 +1,22 @@
+#header{
+   height: 200px;
+   background: -webkit-linear-gradient(bottom, #fbfbfb, #dcdcdc);
+   background: linear-gradient(to top, #fbfbfb, #dcdcdc);
+}
+
+#header-content{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+#mobile-logo{
+   display: none;
+}

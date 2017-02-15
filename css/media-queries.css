@@ -1,0 +1,296 @@
+@media (max-width: 940px){
+   #menu ul :nth-child(3),
+   #menu ul :nth-child(4),
+   #footer .col-sm-2,
+   #spisok img,
+   #description{
+      display: none;
+   }
+   #spisok li a{
+      padding-bottom: 3px !important;
+      padding-top: 3px !important;
+   }
+   #left-panel,
+   right-panel{
+      min-height: auto;
+   }
+   #sunduk{
+      background-image: none;
+      background: #693919;
+      margin: 0.1%;
+      padding: 5px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-radius: 13px;
+   }
+}
+
+@media (max-width: 1200px){
+   .content{
+      width: 98% !important;
+   }
+   .left,
+   .right{
+      width: 1% !important;
+   }
+   #hero{
+      display: none;
+   }
+}
+
+@media (max-width: 1280px){
+   #hero{
+      display: none;
+   }
+}
+@media (min-width: 1600px){
+   .content{
+      width: 70% !important;
+   }
+   .left,
+   .right{
+      width: 15% !important;
+   }
+}
+
+@media (min-width: 1680px){
+   #owl-news{
+      width: 49.7vw !important;
+   }
+}
+
+@media (min-width: 1900px){
+   .content{
+      width: 75% !important;
+   }
+   .left,
+   .right{
+      width: 25% !important;
+   }
+   #owl-news{
+      width: 42.5vw !important;
+   }
+}
+
+@media (min-width: 2560px){
+   .content{
+      width: 75% !important;
+   }
+   .left,
+   .right{
+      width: 45% !important;
+   }
+   #owl-news{
+      width: 33vw !important;
+   }
+}
+
+@media (max-width: 767px){
+   #header-content :nth-child(1),
+   #header-content :nth-child(3),
+   #header-content :nth-child(2),
+   #google_translate_element,
+   .list-group ul li a img,
+   #vk_groups iframe,
+   #footer .col-sm-3,
+   #footer .col-sm-5,
+   #right-panel,
+   #vk_groups,
+   #scroll,
+   .right,
+   .left,
+   #menu,
+   #time{
+      display: none;
+   }
+   #menu-spisok{
+      opacity: 1 !important;
+      border: none;
+      background: #693919;
+      border-radius: 13px;
+      font-size: 20px;
+      color: white;
+      font-family: PTSans-Web-Bold, sans-serif !important;
+      text-shadow: 2px 1px 1px #000;
+   }
+
+   #menu-spisok img{
+      position: relative;
+      top: -13px;
+      left: 3px;
+   }
+
+   #menu-spisok button{
+      position: relative;
+      left: 6px;
+      border: 1px solid #dfa31b!important;
+   }
+
+   #menu-spisok span{
+      background: #dfa31b !important;
+      height: 4px !important;
+   }
+
+   #menu-spisok button:hover,
+   #menu-spisok button:focus{
+      background: none !important;
+   }
+   .kontaktu p,
+   .kontaktu span{
+      display: inline;
+   }
+   .panel-body{
+      padding: 10px !important;
+   }
+   #novosti,
+   #otzivi{
+      width: 100%;
+      margin-left: 0.1%;
+      margin-right: 0.1%;
+      margin-bottom: 10px;
+   }
+   .list-group ul li a {
+      margin: 10px;
+   }
+   #header,
+   #header img{
+      height: auto !important;
+   }
+   #header img{
+      -ms-flex-item-align: center;
+      align-self: center;
+   }
+   #mobile-logo{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important;
+   }
+   #header div,{
+      padding: 0px;
+      margin: 0px;
+   }
+   .karkaz{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+   }
+   .content{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100% !important;
+   }
+   #left-panel{
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+      min-height: 0px;
+      padding: 0px;
+      margin: 5px;
+      margin-bottom: 0px;
+      margin-left: 14px;
+      margin-right: 14px;
+      background: #fbfbfb;
+      box-shadow: none;
+   }
+   #menu-spisok{
+      margin-bottom: 6px;
+      display: block;
+   }
+   #spisok{
+      opacity: 1;
+      margin: 0px !important;
+      margin-bottom: 6px !important;
+      width: 100%;
+      min-width: 100%;
+   }
+   #spisok li a{
+      margin: 0px;
+      padding: 1px !important;
+   }
+   #game-panel{
+      margin: 0px;
+      margin-top: 3px;
+   }
+   #game-panel-item a div{
+      margin: 3px;
+      border-radius: 13px;
+   }
+   #game-panel-item{
+      margin: 0px !important;
+      padding: 0px !important;
+      margin: 0px;
+      margin-top: 0px;
+   }
+   .thumbail{
+      margin: 0px !important;
+      padding: 0px !important;
+   }
+   #footer .col-sm-1 .nav{
+      width: 50%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+   }
+   #footer .col-sm-1 a{
+      text-align: center !important;
+   }
+   #footer,
+   #footer .col-sm-12{
+      height: 160px;
+   }
+   #footer .content{
+      display: inline !important;
+   }
+   #social{
+      margin-top: 5px !important;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+   }
+   #social a img{
+      margin-left: 0px !important;
+   }
+   #social a,
+   #social{
+      margin-top: 5px;
+      height: 45px;
+   }
+   #footer .col-sm-2{
+      padding-left: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      margin-left: 50% !important;
+      top: -158px;
+   }
+   #footer .col-sm-1{
+      padding: 0px;
+   }
+   #sunduk{
+      margin-bottom: 5px;
+   }
+   #sunduk :nth-child(5),
+   #sunduk :nth-child(4){
+      padding: 0px;
+   }
+   #rezultat{
+      width: 100%;
+      margin-bottom: 8px;
+   }
+}

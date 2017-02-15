@@ -1,0 +1,45 @@
+.karkaz{
+   background-color: #fbfbfb;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+.left,
+.right{
+   width: 10% !important;
+}
+
+.content{
+   width: 80% !important;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+}
+
+#right-panel,#left{
+   background: url(../img/background.jpg) center top no-repeat fixed rgb(0, 0, 0);
+}
+
+#left{
+   box-shadow: inset 0px -3px 1px -1px rgba(0,0,0,0.75),
+               inset 0px 3px 1px -1px rgba(0,0,0,0.75);
+}
+
+#right-panel{
+   border-top-left-radius: 13px;
+   border-bottom-left-radius: 13px;
+   box-shadow: inset 2px 2px 1px 0px rgba(0,0,0,0.75),
+               inset 0px -3px 1px -1px rgba(0,0,0,0.75);
+}

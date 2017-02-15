@@ -1,0 +1,96 @@
+#sunduk{
+   font-family: OpenSans-Semibold, sans-serif;
+   text-shadow: 2px 1px 1px #000;
+   padding-top: 28%;
+   padding-bottom: 8%;
+   padding-left: 10%;
+   padding-right: 10%;
+   background-image: url(/img/sunduk.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   color: white;
+   width: 100%;
+   margin-right: 0px;
+   margin-left: 0px;
+}
+
+#sunduk select,
+#sunduk input{
+   height: 30px;
+   width: 100%;
+   border-radius: 10px;
+   background: #dfa31b;
+   color: white;
+   text-shadow: 2px 1px 1px #000;
+   border: none;
+   margin: 0px;
+}
+
+#sunduk input{
+   padding-left: 10px;
+}
+
+#rezultat{
+   width: 110%;
+   height: 30px;
+   border-radius: 10px;
+   background: #dfa31b;
+}
+
+#rezultat div p{
+   padding: 5px;
+   padding-left: 9px;
+   margin: 0px;
+}
+
+#sunduk button{
+   height: 45px;
+   border: none;
+   color: whitesmoke;
+   font-size: 20px;
+   font-family: PTSans-Web-Bold, sans-serif;
+   border-radius: 15px;
+}
+
+#sunduk input::-webkit-input-placeholder {
+    color: white;
+}
+
+#sunduk select{
+   padding-left: 5px;
+}
+
+#sunduk div :nth-child(5),
+#sunduk div :nth-child(1){
+
+}
+#sunduk p{
+   margin 0px;
+   padding-left: 0px;
+
+}
+
+#zakazat {
+   text-align: center;
+}
+
+/*-------------------tablica-------------------*/
+tbody tr:last-child td,
+tbody tr:last-child th{
+   border-bottom: none !important;
+}
+
+th, td{
+   text-align: center !important;
+   line-height: 5px !important;
+   border-bottom: 1px solid #333 !important;
+   font-size: 15px !important;
+
+}
+
+thead tr th{
+   font-size: 16px !important;
+   line-height: 10px !important;
+   font-family: OpenSans-Bold, sans-serif !important;
+}

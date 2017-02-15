@@ -1,0 +1,103 @@
+#footer{
+   height: 150px;
+   background: -webkit-linear-gradient(top, #fbfbfb, #dcdcdc);
+   background: linear-gradient(to bottom, #fbfbfb, #dcdcdc);
+}
+
+#footer div{
+   padding: 0px;
+}
+
+#footer .col-sm-3{
+   padding: 0px;
+   height: 150px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+
+#footer .col-sm-5 img{
+   height: 140px;
+}
+
+#footer .col-sm-5{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   padding: 5px;
+}
+
+#footer .col-sm-1{
+   padding-top: 25px;
+}
+
+#footer .col-sm-1 a{
+   padding: 0px;
+   color: #693919;
+   font-family: OpenSans-Regular, sans-serif !important;
+}
+
+#footer .col-sm-1 a{
+   text-align: left;
+}
+
+#footer .col-sm-1 a:hover,
+.active-menu-footer{
+   color: #dfa31b !important;
+   background: none !important;
+}
+
+#footer .col-sm-2{
+   padding-left: 2%;
+}
+
+#footer .kontaktu p{
+   font-size: 14px;
+}
+
+#social{
+   height: 150px;
+   padding: 0px !important;
+   display: -webkit-box !important;
+   display: -ms-flexbox !important;
+   display: flex !important;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   margin: 0px !important;
+}
+
+#social a img{
+   margin-left: -9px !important;
+   margin-right: 0px !important;
+}
+
+#social img{
+   -ms-flex-item-align: center;
+   align-self: center;
+   width: 100px;
+   height: 45px;
+}
+
+#footer .kontaktu{
+   padding-top: 10px !important;
+   padding-left: 2% !important;
+}

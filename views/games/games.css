@@ -1,0 +1,76 @@
+.owl-news{
+   display: block;
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   border-radius: 20px;
+   border-bottom: 3px solid #dfa31b;
+   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+.owl-theme .owl-controls{
+   position: relative;
+}
+
+.owl-prev{
+   float: left;
+   width: 28px;
+   height: 38px;
+   margin-top:-14.5%;
+   margin-left: 2%;
+   background: url('/img/arrows.png') 0px 0px;
+}
+
+.owl-next{
+   background: url('/img/arrows.png') 28px 0px;
+   float: right;
+   width: 28px;
+   height: 38px;
+   margin-top:-14.5%;
+   margin-right: 2%;
+}
+
+.owl-prev:hover{
+   background: url('/img/arrows.png') 0px 38px;
+}
+
+.owl-next:hover{
+   background: url('/img/arrows.png') 28px 38px;
+}
+
+#game-panel {
+   margin-top: 15px;
+}
+
+#game-panel-item a{
+   color: #693919;
+   text-decoration: none;
+}
+
+#game-panel-item a:hover{
+   color: #dfa31b;
+}
+#game-panel-item a div{
+   border-radius: 13px;
+}
+#game-panel-item a div:hover{
+   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+.thumbnail p {
+   margin: 0px;
+   padding: 0px;
+   height: 19px;
+   font-family: OpenSans-Web-Regular, sans-serif;
+}
+
+h6{
+   text-align: center;
+   height: 20px;
+   font-family: OpenSans-Semibold, sans-serif;
+   font-size: 13px !important;
+}
+
+.badge{
+   background: #5cb85c;
+}

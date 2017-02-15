@@ -1,3 +1,6 @@
+<style>
+   @import url(/views/game/game.css);
+</style>
 <div id="description" class="panel panel-default">
       <div class="panel-heading">
          Покупка {{detail.valuta}} в игре {{detail.title}}
@@ -57,9 +60,9 @@
          </select>
       </p>
    </div>
-   <div id="zakazat"> 
+   <div id="zakazat">
       <button type="button" class="btn btn-success">Отправить заказ <span id="gotovo"></span></button>
-   </div> 
+   </div>
 </div>
 
 <div class="panel panel-default">
@@ -79,16 +82,4 @@
       </tbody>
    </table>
 </div>
-
-<script type="text/javascript">
-   $.MenuChoise(0,0);
-</script>
-
-<!-- Modules -->
-<script src="js/app.js"></script>
-
-
-
-
-
-     
+<script src="/views/game/game.js"></script>
