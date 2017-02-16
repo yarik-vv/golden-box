@@ -86,7 +86,7 @@
    { 
       "title":"ArcheAge (RUS)",       
       "logo":"img/games/archeage/logo.png",
-      "background": "url(img/archeage/background.jpg)",
+      "background": "url(img/games/archeage/background.jpg)",
       "rating":"2",                    
       "badge":"",
       "valuta":"золота",

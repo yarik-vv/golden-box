@@ -1,4 +1,32 @@
-@media (max-width: 940px){
+@media (hover: none), (max-width: 1000px), (orientation: portrait) {
+   .webmoney:hover{
+      background: url('../img/footer/payment.png') 0px 0px;
+   }
+   .qiwi:hover{
+      background: url('../img/footer/payment.png') 0px 45px;
+   }
+   .yandex:hover{
+      background: url('../img/footer/payment.png') 0px 90px;
+   }
+   .panel-body a:hover,
+   .kontaktu a:hover,
+   #game-panel-item a:hover,
+   #footer .col-sm-1 .nav a:hover{
+      color: #693919 !important;
+   }
+   #game-panel-item a div:hover,
+   #garantii-item a div:hover,
+   #rating:hover,
+   #alfavit:hover{
+      box-shadow: none !important;
+   }
+   .owl-prev,
+   .owl-next{
+      display: none !important;
+   }
+}
+
+@media (max-width: 1000px){
    #menu ul :nth-child(3),
    #menu ul :nth-child(4),
    #footer .col-sm-2,
@@ -22,6 +50,7 @@
       padding-top: 10px;
       padding-bottom: 20px;
       border-radius: 13px;
+      margin-bottom: 10px;
    }
 }
 
@@ -96,7 +125,7 @@
    #footer .col-sm-5,
    #right-panel,
    #vk_groups,
-   #scroll,
+   .scroll,
    .right,
    .left,
    #menu,
@@ -116,12 +145,13 @@
    }
 
    .scroll.mobile{
+      display: block;
       top: -2.5vh;
    }
    #menu-spisok p{
       margin: 0;
       position: absolute;
-      left: 16%;
+      left: 55px;
       top: 25%;
    }
    #menu-spisok button{
@@ -143,9 +173,11 @@
    .kontaktu span{
       display: inline;
    }
+/*
    .list-group ul li a {
       margin: 10px;
    }
+*/
    #header,
    #header img{
       height: auto !important;
@@ -205,6 +237,11 @@
    #spisok li a{
       margin: 0px;
       padding: 1px !important;
+      font-size: 25px !important;
+      height: 30px;
+   }
+   #spisok ul li:nth-child(1) div{
+      font-size: 20px !important;
    }
    #game-panel{
       margin: 0px;
@@ -234,8 +271,9 @@
       text-align: center !important;
    }
    #footer,
-   #footer .col-sm-12{
-      height: 160px;
+   #footer .content,
+   .col-sm-12{
+      height: 160px !important;
    }
    #footer .content{
       display: inline !important;
@@ -249,7 +287,7 @@
       -ms-flex-pack: distribute;
       justify-content: space-around;
    }
-   #payment a img{
+   #payment a{
       margin-left: 0px !important;
    }
    #payment a,

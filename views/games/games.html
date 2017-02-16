@@ -16,7 +16,7 @@
 
 <div id="game-panel">
    <div id="game-panel-item" class="col-xs-6 col-sm-3" ng-repeat="game in games| orderBy:predicate:reverse">
-      <a href="#/game/{{game.rating}}">
+      <a href="#/game/{{game.rating}}" title="Купить {{game.valuta}} в {{game.title}}">
          <div class="thumbnail">
             <p>
                <span class="badge pull-right">{{game.badge}}</span>

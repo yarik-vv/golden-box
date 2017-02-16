@@ -5,7 +5,7 @@
    padding-bottom: 8%;
    padding-left: 10%;
    padding-right: 10%;
-   background-image: url(../../img/sunduk.jpg);
+   background-image: url(../../img/sunduk.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
@@ -61,14 +61,17 @@
    padding-left: 5px;
 }
 
-#sunduk div :nth-child(5),
-#sunduk div :nth-child(1){
-
-}
 #sunduk p{
    margin 0px;
    padding-left: 0px;
+}
 
+#error{
+   margin-bottom: 5px;
+   text-indent: 2.5%;
+   color: yellow;
+   text-shadow: none;
+   font-size: 90%;
 }
 
 #zakazat {

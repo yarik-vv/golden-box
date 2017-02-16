@@ -14,7 +14,7 @@
 <div id="sunduk">
    <div class="col-sm-6">
       <p>Сервер:
-         <select ng-model="model.selectedCategory" ng-options="server as server.name for server in detail.servers">
+         <select ng-click="error={color:'transparent'}" ng-model="model.selectedCategory" ng-options="server as server.name for server in detail.servers">
             <option value="" disabled >Выберите сервер</option>
          </select>
       </p>
@@ -61,6 +61,7 @@
          </select>
       </p>
    </div>
+   <p id="error" ng-style="error">Укажите сервер, чтобы посчитать валюту</p>
    <div id="zakazat">
       <button type="button" class="btn btn-success">Отправить заказ <span id="gotovo"></span></button>
    </div>
