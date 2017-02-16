@@ -27,6 +27,14 @@
    justify-content: space-around;
 }
 
+#menu ul li:nth-child(even){
+   position: relative;
+   top: 35%;
+   width: 10px;
+   height: 33px;
+   background: url('../img/index-items.png') -10px -20px;
+}
+
 .nav.navbar-nav li img{
    margin-top: 70%;
 }

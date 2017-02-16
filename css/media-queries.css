@@ -2,7 +2,7 @@
    #menu ul :nth-child(3),
    #menu ul :nth-child(4),
    #footer .col-sm-2,
-   #spisok img,
+   .line,
    #description{
       display: none;
    }
@@ -105,6 +105,7 @@
    }
    #menu-spisok{
       opacity: 1 !important;
+/*      height: 2vh;*/
       border: none;
       background: #693919;
       border-radius: 13px;
@@ -114,12 +115,15 @@
       text-shadow: 2px 1px 1px #000;
    }
 
-   #menu-spisok img{
-      position: relative;
-      top: -13px;
-      left: 3px;
+   .scroll.mobile{
+      top: -2.5vh;
    }
-
+   #menu-spisok p{
+      margin: 0;
+      position: absolute;
+      left: 16%;
+      top: 25%;
+   }
    #menu-spisok button{
       position: relative;
       left: 6px;
@@ -236,7 +240,7 @@
    #footer .content{
       display: inline !important;
    }
-   #social{
+   #payment{
       margin-top: 5px !important;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -245,11 +249,11 @@
       -ms-flex-pack: distribute;
       justify-content: space-around;
    }
-   #social a img{
+   #payment a img{
       margin-left: 0px !important;
    }
-   #social a,
-   #social{
+   #payment a,
+   #payment{
       margin-top: 5px;
       height: 45px;
    }
