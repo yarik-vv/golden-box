@@ -18,11 +18,11 @@
    height: 38px;
    margin-top:-14.5%;
    margin-left: 2%;
-   background: url('../../img/arrows.png') 0px 0px;
+   background: url('../../img/slider/arrows.png') 0px 0px;
 }
 
 .owl-next{
-   background: url('../../img/arrows.png') 28px 0px;
+   background: url('../../img/slider/arrows.png') 28px 0px;
    float: right;
    width: 28px;
    height: 38px;
@@ -31,11 +31,11 @@
 }
 
 .owl-prev:hover{
-   background: url('../../img/arrows.png') 0px 38px;
+   background: url('../../img/slider/arrows.png') 0px 38px;
 }
 
 .owl-next:hover{
-   background: url('../../img/arrows.png') 28px 38px;
+   background: url('../../img/slider/arrows.png') 28px 38px;
 }
 
 #game-panel {

@@ -49,7 +49,7 @@ $(document).ready(function () {
          document.getElementById('left-panel').style.backgroundAttachment = "fixed";
          document.getElementById('left').style.background = 'url(img/background.jpg) center top no-repeat';
          document.getElementById('left').style.backgroundAttachment = "fixed";
-         document.getElementById('logo').src = "img/logo.png";
+         document.getElementById('logo').src = "img/header/logo.png";
       });
    }
 });
