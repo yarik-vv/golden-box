@@ -144,7 +144,7 @@
 
    .scroll.mobile{
       display: block;
-      top: -15px;
+      top: -13px;
    }
    #menu-spisok p{
       margin: 0;
@@ -217,13 +217,13 @@
       box-shadow: none;
    }
    #menu-spisok{
-      margin-bottom: 6px;
+      margin-bottom: 10px;
       display: block;
    }
    #spisok{
       opacity: 1;
       margin: 0px !important;
-      margin-bottom: 6px !important;
+      margin-bottom: 10px !important;
       width: 100%;
       min-width: 100%;
    }
@@ -237,8 +237,8 @@
       font-size: 18px !important;
    }
    #game-panel{
-      margin: 0px;
-      margin-top: 3px;
+      margin: 0px !important;
+      margin-top: 7px !important;
    }
    #game-panel-item a div{
       margin: 3px;
@@ -271,6 +271,9 @@
    #footer .content{
       display: inline !important;
    }
+   #footer{
+      margin-top: 10px;
+   }
    #payment{
       margin-top: 5px !important;
       -webkit-box-orient: horizontal;
@@ -282,17 +285,17 @@
    }
    #payment a{
       margin-left: 0px !important;
+      margin-top: 5px;
    }
    #payment a,
    #payment{
-      margin-top: 5px;
       height: 45px;
    }
    #footer .col-sm-2{
       height: 0;
       position: relative;
       margin-left: 45% !important;
-      top: -101px;
+      top: -107px;
       padding-left: 0px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -309,7 +312,8 @@
       padding: 0px;
    }
    #sunduk{
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      height: 601px;
    }
    #sunduk :nth-child(5),
    #sunduk :nth-child(4){
@@ -318,5 +322,17 @@
    #rezultat{
       width: 100%;
       margin-bottom: 8px;
+   }
+   #error{
+      width: 60%;
+      position: relative;
+      top: -276px;
+      left: 50px;
+      line-height: 13px;
+      margin: 0;
+   }
+   #zakazat{
+      position: relative;
+      top: -27px;
    }
 }
