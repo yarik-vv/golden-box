@@ -313,7 +313,8 @@
    }
    #sunduk{
       margin-bottom: 10px;
-      height: 601px;
+      height: 619px;
+      font-size: 16px;
    }
    #sunduk :nth-child(5),
    #sunduk :nth-child(4){
@@ -326,7 +327,7 @@
    #error{
       width: 60%;
       position: relative;
-      top: -276px;
+      top: -285px;
       left: 50px;
       line-height: 13px;
       margin: 0;

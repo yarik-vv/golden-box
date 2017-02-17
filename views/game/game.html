@@ -11,61 +11,72 @@
       </div>
 </div>
 
-<div id="sunduk">
-   <div class="col-sm-6">
-      <p>Сервер:
-         <select ng-click="error={color:'transparent'}" ng-model="model.selectedCategory" ng-options="server as server.name for server in detail.servers">
-            <option value="" disabled >Выберите сервер</option>
-         </select>
-      </p>
-      <p>Способ доставки:
-         <select>
-            <option disabled selected>Выберите способ доставки</option>
-            <option ng-repeat="dostavka in detail.dostavka">{{dostavka.sposob}}</option>
-         </select>
-      </p>
-      <p>Ник персонажа:
-         <input type="text" placeholder="Введите ник персонажа">
-      </p>
-      <p class="col-sm-6">Получу:
-         <input type="text" ng-model="model.name">
-      </p>
-      <div class="col-sm-6">Заплачу:
-         <div id="rezultat">
-            <div ng-show="model.selectedCategory">
-               <p type="text" ng-show="model.name">{{model.name*model.selectedCategory.cena}}</p>
+<form name="zakaz" ng-submit="submit()">
+   <div id="sunduk">
+      <div class="col-sm-6">
+         <p>Сервер:
+            <select required ng-click="error={color:'transparent'}" ng-model="model.selectedCategory" ng-options="server as server.name for server in detail.servers">
+               <option value="" disabled >Выберите сервер</option>
+            </select>
+         </p>
+         <p>Способ доставки:
+            <select required ng-model="dostavka">
+               <option value="" disabled selected>Выберите способ доставки</option>
+               <option ng-repeat="dostavka in detail.dostavka">{{dostavka.sposob}}</option>
+            </select>
+         </p>
+         <p>Ник персонажа:
+            <input ng-model="nickname" pattern="^[а-яА-ЯёЁa-zA-Z0-9/.^!|$%&*#-_?:https??@?]{3,20}$" required placeholder="Введите ник персонажа">
+         </p>
+         <p class="col-sm-6">Получу:
+            <input required ng-model="model.name" pattern="^[0-9.]{0,13}$">
+         </p>
+         <div class="col-sm-6">Заплачу:
+            <div id="rezultat">
+               <div ng-show="model.selectedCategory">
+                  <p type="text" ng-show="model.name">{{model.name*model.selectedCategory.cena}}</p>
+               </div>
             </div>
          </div>
       </div>
+      <div class="col-sm-6">
+         <p>Сторона:
+            <select>
+               <option disabled selected>Выберите сторону</option>
+               <option ng-repeat="storona in detail.storonu">{{storona.name}}</option>
+            </select>
+         </p>
+         <p>Електронный адрес:
+            <input ng-model="email" type="email" placeholder="Введите ваш e-mail" required>
+         </p>
+         <p>Контактные данные:
+            <input ng-model="contacts" required pattern="^[а-яА-ЯёЁa-zA-Z0-9/.\s-_?:https?]{5,150}$" placeholder="Введите ваш vk, skype и т.п.">
+         </p>
+         <p>Способ оплаты
+            <select required ng-model="oplata">
+               <option value="" disabled selected>Выберите способ оплаты</option>
+               <option>Qiwi Кошелек (без комиссии)</option>
+               <option>Яндекс деньги (без комиссии)</option>
+               <option>WebMoney</option>
+               <option>Visa/MasterCard</option>
+            </select>
+         </p>
+      </div>
+      <p id="error" ng-style="error">Укажите сервер, чтобы посчитать валюту</p>
+      <div id="zakazat">
+         <button type="submit" class="btn btn-success">Отправить заказ
+            <span class="indicator glyphicon glyphicon-ok" ng-hide="zakaz.$invalid"></span>
+            <span class="indicator glyphicon glyphicon-remove" ng-show="zakaz.$invalid"></span>
+         </button>
+      </div>
    </div>
-   <div class="col-sm-6">
-      <p>Сторона:
-         <select>
-            <option disabled selected>Выберите сторону</option>
-            <option ng-repeat="storona in detail.storonu">{{storona.name}}</option>
-         </select>
-      </p>
-      <p>Електронный адрес:
-         <input type="text" placeholder="Введите ваш e-mail">
-      </p>
-      <p>Контактные данные:
-         <input type="text" placeholder="Введите ваш vk, skype и т.п.">
-      </p>
-      <p>Способ оплаты
-         <select>
-            <option disabled selected>Выберите способ оплаты</option>
-            <option>Qiwi Кошелек (без комиссии)</option>
-            <option>Яндекс деньги (без комиссии)</option>
-            <option>WebMoney</option>
-            <option>Visa/MasterCard</option>
-         </select>
-      </p>
+   <div class="alert alert-danger" ng-show="zakaz.$invalid">
+      <strong>Ваш заказ не готов к обработке!</strong> Пожалуйста, заполните все необходимые поля. Когда заказ будет готов к отправке, индикатор <span class="glyphicon glyphicon-remove"></span> измениться на <span class="glyphicon glyphicon-ok".></span> и это сообщение пропадет.
    </div>
-   <p id="error" ng-style="error">Укажите сервер, чтобы посчитать валюту</p>
-   <div id="zakazat">
-      <button type="button" class="btn btn-success">Отправить заказ <span id="gotovo"></span></button>
+   <div class="alert alert-success hide">
+      <strong>Ваш заказ принят!</strong> Ему был присвоен номер: 1. Мы свяжемся с вами в ближайшее время!
    </div>
-</div>
+</form>
 
 <div class="panel panel-default">
    <div class="panel-heading">Цены на игровую валюту {{detail.title}}</div>
