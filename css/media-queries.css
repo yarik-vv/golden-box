@@ -10,8 +10,7 @@
    }
    .panel-body a:hover,
    .kontaktu a:hover,
-   #game-panel-item a:hover,
-   #footer .col-sm-1 .nav a:hover{
+   #game-panel-item a:hover{
       color: #693919 !important;
    }
    #game-panel-item a div:hover,
@@ -134,11 +133,10 @@
    }
    #menu-spisok{
       opacity: 1 !important;
-/*      height: 2vh;*/
       border: none;
       background: #693919;
       border-radius: 13px;
-      font-size: 20px;
+      font-size: 23px;
       color: white;
       font-family: PTSans-Web-Bold, sans-serif !important;
       text-shadow: 2px 1px 1px #000;
@@ -146,13 +144,13 @@
 
    .scroll.mobile{
       display: block;
-      top: -2.5vh;
+      top: -15px;
    }
    #menu-spisok p{
       margin: 0;
       position: absolute;
       left: 55px;
-      top: 25%;
+      top: 11px;
    }
    #menu-spisok button{
       position: relative;
@@ -173,11 +171,6 @@
    .kontaktu span{
       display: inline;
    }
-/*
-   .list-group ul li a {
-      margin: 10px;
-   }
-*/
    #header,
    #header img{
       height: auto !important;
@@ -237,11 +230,11 @@
    #spisok li a{
       margin: 0px;
       padding: 1px !important;
-      font-size: 25px !important;
+      font-size: 23px !important;
       height: 30px;
    }
    #spisok ul li:nth-child(1) div{
-      font-size: 20px !important;
+      font-size: 18px !important;
    }
    #game-panel{
       margin: 0px;
@@ -296,6 +289,10 @@
       height: 45px;
    }
    #footer .col-sm-2{
+      height: 0;
+      position: relative;
+      margin-left: 45% !important;
+      top: -101px;
       padding-left: 0px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -307,9 +304,6 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      position: relative;
-      margin-left: 50% !important;
-      top: -158px;
    }
    #footer .col-sm-1{
       padding: 0px;
