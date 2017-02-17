@@ -336,4 +336,9 @@
       position: relative;
       top: -27px;
    }
+   .alert{
+      width: 100%;
+      position: static;
+      margin-bottom: 10px;
+   }
 }

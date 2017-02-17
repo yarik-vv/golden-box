@@ -46,7 +46,8 @@
    color: #693919;
 }
 
-.oval {
+.oval,
+.alert{
      border-radius: 13px !important;
 }
 
