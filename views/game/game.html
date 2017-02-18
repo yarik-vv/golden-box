@@ -20,13 +20,12 @@
             </select>
          </p>
          <p>Способ доставки:
-            <select required ng-model="dostavka">
+            <select required ng-model="dostavka" ng-options="dostavka as dostavka.sposob for dostavka in detail.dostavka">
                <option value="" disabled selected>Выберите способ доставки</option>
-               <option ng-repeat="dostavka in detail.dostavka">{{dostavka.sposob}}</option>
             </select>
          </p>
          <p>Ник персонажа:
-            <input ng-model="nickname" pattern="^[а-яА-ЯёЁa-zA-Z0-9/.^!|$%&*#-_?:https??@?]{3,20}$" required placeholder="Введите ник персонажа">
+            <input required ng-model="nickname" pattern="^[а-яА-ЯёЁa-zA-Z0-9/.^!|$%&*#-_?:https??@?]{3,20}$" placeholder="Введите ник персонажа">
          </p>
          <p class="col-sm-6">Получу:
             <input required ng-model="model.name" pattern="^[0-9.]{0,13}$">
@@ -41,13 +40,12 @@
       </div>
       <div class="col-sm-6">
          <p>Сторона:
-            <select>
-               <option disabled selected>Выберите сторону</option>
-               <option ng-repeat="storona in detail.storonu">{{storona.name}}</option>
+            <select ng-model="storona" ng-options="storona as storona.name for storona in detail.storonu">
+               <option value="" disabled selected>Выберите сторону</option>
             </select>
          </p>
          <p>Електронный адрес:
-            <input ng-model="email" type="email" placeholder="Введите ваш e-mail" required>
+            <input required ng-model="email" type="email" placeholder="Введите ваш e-mail">
          </p>
          <p>Контактные данные:
             <input ng-model="contacts" required pattern="^[а-яА-ЯёЁa-zA-Z0-9/.\s-_?:https?]{5,150}$" placeholder="Введите ваш vk, skype и т.п.">
@@ -62,13 +60,15 @@
             </select>
          </p>
       </div>
-      <p id="error" ng-style="error">Укажите сервер, чтобы посчитать валюту</p>
       <div id="zakazat">
          <button type="submit" class="btn btn-success">Отправить заказ
             <span class="indicator glyphicon glyphicon-ok" ng-hide="zakaz.$invalid"></span>
             <span class="indicator glyphicon glyphicon-remove" ng-show="zakaz.$invalid"></span>
          </button>
       </div>
+   </div>
+   <div class="alert alert-info" ng-hide="model.selectedCategory">
+      <strong>Внимание!</strong> Чтобы посчитать цену, нужно выбрать сначала сервер!
    </div>
    <div class="alert alert-danger" ng-show="zakaz.$invalid">
       <strong>Ваш заказ не готов к обработке!</strong> Пожалуйста, заполните все необходимые поля. Когда заказ будет готов к отправке, индикатор <span class="glyphicon glyphicon-remove"></span> измениться на <span class="glyphicon glyphicon-ok".></span> и это сообщение пропадет.
@@ -78,7 +78,7 @@
    </div>
 </form>
 
-<div class="panel panel-default">
+<div class="panel panel-default tabl">
    <div class="panel-heading">Цены на игровую валюту {{detail.title}}</div>
    <table class="table">
       <thead>

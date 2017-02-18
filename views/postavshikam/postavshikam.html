@@ -19,7 +19,7 @@
       <p><br>Для добавления в поставщики следует написать по контактам или же заполнить форму ниже:</p>
       <form name="postavshik" ng-submit="submit()">
          <div class="thumbnail col-sm-8">
-            <select required ng-model="model.selectedCategory" ng-options="game as game.title for game in games">
+            <select required ng-model="selectgame" ng-options="game as game.title for game in games">
                <option value="" disabled selected>Выберите игру</option>
             </select>
             <textarea pattern="^[а-яА-ЯёЁa-zA-Z0-9/.\s-_?:https??@?]{10,250}$" ng-model="data" placeholder="Укажите сервер и количество игровой валюты. Если вы заходете в игру в определенное время суток - напишите нам об этом" required></textarea>

@@ -51,6 +51,9 @@
       border-radius: 13px;
       margin-bottom: 10px;
    }
+   .alert{
+      margin-bottom: 10px;
+   }
 }
 
 @media (max-width: 1200px){
@@ -313,7 +316,6 @@
    }
    #sunduk{
       margin-bottom: 10px;
-      height: 619px;
       font-size: 16px;
    }
    #sunduk :nth-child(5),
@@ -323,18 +325,6 @@
    #rezultat{
       width: 100%;
       margin-bottom: 8px;
-   }
-   #error{
-      width: 60%;
-      position: relative;
-      top: -285px;
-      left: 50px;
-      line-height: 13px;
-      margin: 0;
-   }
-   #zakazat{
-      position: relative;
-      top: -27px;
    }
    .alert{
       width: 100%;
