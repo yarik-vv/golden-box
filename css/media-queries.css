@@ -28,10 +28,25 @@
 @media (max-width: 1000px){
    #menu ul :nth-child(3),
    #menu ul :nth-child(4),
-   #footer .col-sm-2,
    .line,
-   #description{
+   #description,
+   #footer .col-sm-5 img{
       display: none;
+   }
+   #footer .col-sm-5{
+      width: 60px;
+   }
+   #footer .col-sm-2{
+      width: 175px;
+   }
+   #footer div{
+      margin-left: 24px;
+   }
+   #footer .kontaktu div{
+      margin-left:0;
+   }
+   #game-panel-item a div{
+      margin: 3px !important;
    }
    #spisok li a{
       padding-bottom: 3px !important;
@@ -243,16 +258,6 @@
       margin: 0px !important;
       margin-top: 7px !important;
    }
-   #game-panel-item a div{
-      margin: 3px;
-      border-radius: 13px;
-   }
-   #game-panel-item{
-      margin: 0px !important;
-      padding: 0px !important;
-      margin: 0px;
-      margin-top: 0px;
-   }
    .thumbail{
       margin: 0px !important;
       padding: 0px !important;
@@ -295,6 +300,7 @@
       height: 45px;
    }
    #footer .col-sm-2{
+      width: 55%;
       height: 0;
       position: relative;
       margin-left: 45% !important;
@@ -330,5 +336,13 @@
       width: 100%;
       position: static;
       margin-bottom: 10px;
+   }
+   #footer div{
+      margin-left: 0;
+   }
+}
+@media (max-width: 767px) and (orientation: landscape){
+   #game-panel-item a div{
+      margin: 10px !important;
    }
 }

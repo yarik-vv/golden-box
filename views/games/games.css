@@ -47,6 +47,17 @@
    text-decoration: none;
 }
 
+#game-panel-item a div{
+   margin: 8px;
+   border-radius: 13px;
+}
+#game-panel-item{
+   margin: 0px !important;
+   padding: 0px !important;
+   margin: 0px;
+   margin-top: 0px;
+}
+
 #game-panel-item a:hover{
    color: #dfa31b;
 }
