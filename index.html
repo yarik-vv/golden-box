@@ -1,9 +1,12 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
+   <title>Golden Box - онлайн магазин игровой валюты.</title>
    <link href="favicon.png" rel="icon" sizes="16x16" type="image/png">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Онлайн магазин игровой валюты. Купить Золото, Адену, Кинары. Быстро, дешево, с гарантиями!">
+   <meta name="keywords" content="GoldenBox, купить, продать, игровая, валюта, золото, адена, кинары, онлайн, игры, Aion, ArcheAge, Blade&Soul, DragonNest, Lineage, L2, Perfect World, Warcraft, Classic, Ruoff, Руофф, WOW, Lineage2, Lineage II">
    <style>
       @import url(css/fonts.css);
       @import url(css/karkaz.css);
@@ -29,10 +32,10 @@
          onlyWidgets: true
       });
    </script>
+   <link rel="prefetch" href="/img/games/">
 </head>
 <body ng-app="MainApp" ng-controller="GamesController">
    <div class="container-fluid">
-      <!-- start header -->
       <div class="karkaz row" id="header">
          <div id="mobile-logo">
             <a href="#/">
@@ -65,14 +68,13 @@
             </div>
             <img id="hero" src="img/header/poster.png">
          </div>
+         <!-- end content -->
          <div class="right"></div>
       </div>
       <!-- end header -->
-      <!-- start main -->
       <div class="karkaz row">
          <div id="left" class="left"></div>
          <div class="content">
-            <!-- left panel -->
             <div id="left-panel" class="col-sm-3">
                <nav class="navbar navbar-default oval" id="menu-spisok">
                   <div class="navbar-header">
@@ -106,7 +108,6 @@
                <div id="vk_groups"></div>
             </div>
             <!-- end left panel -->
-            <!-- center panel -->
             <div class="col-sm-9">
                <nav class="navbar navbar-default" id="menu">
                   <ul class="nav navbar-nav main-nav">
@@ -122,14 +123,14 @@
                   </ul>
                </nav>
                <div id="view" ng-view></div>
+               <!-- end view -->
             </div>
             <!-- end center panel -->
          </div>
-         <!-- end content  -->
+         <!-- end content -->
          <div id="right-panel" class="right"></div>
       </div>
-      <!-- end main  -->
-      <!-- start footer  -->
+      <!-- end main -->
       <div class="karkaz row" id="footer">
          <div class="left"></div>
          <div class="content">
@@ -179,9 +180,10 @@
                </div>
             </div>
          </div>
+         <!-- end content -->
          <div class="right"></div>
       </div>
-      <!-- end footer  -->
+      <!-- end footer -->
    </div>
    <!-- end container-fluid -->
    <script type="text/javascript">

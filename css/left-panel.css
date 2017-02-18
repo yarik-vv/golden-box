@@ -100,7 +100,6 @@
    color: white;
    font-size: 18px;
    padding: 0px;
-/*   padding-top: 4px;*/
    line-height: 18px;
    display: -webkit-box;
    display: -ms-flexbox;
@@ -180,7 +179,7 @@
    background: #dfa31b;
    text-shadow: 2px 1px 1px #000;
 }
-/*------------------------vk-----------*/
+
 #vk_groups iframe{
    width: 100% !important;
    border-radius: 13px;
