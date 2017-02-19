@@ -1,17 +1,17 @@
 [
-   { 
-      "title":"Blade&Soul (4Game)",       
+   {
+      "title":"Blade&Soul (4Game)",
       "logo":"img/games/blade-soul/logo.png",
       "background": "url(img/games/blade-soul/background.jpg)",
-      "rating":"0",                    
+      "rating":"0",
       "badge":"Новое",
       "valuta":"золота",
-      "servers":                      
+      "servers":
       [
          {
             "name":"Рубин",
             "cena":"13.9"
-         },           
+         },
          {
             "name":"Изумруд",
             "cena":"13.9"
@@ -19,7 +19,7 @@
          {
             "name":"Аметист",
             "cena":"13.9"
-         },             
+         },
          {
             "name":"Топаз",
             "cena":"13.9"
@@ -27,26 +27,26 @@
          {
             "name":"Сапфир",
             "cena":"13.9"
-         },             
+         },
          {
             "name":"Агат",
             "cena":"13.9"
-         }             
+         }
       ],
-      "dostavka":                      
+      "dostavka":
       [
-         {"sposob":"Встреча в игре"},  
-         {"sposob":"Передача почтой"} 
+         {"sposob":"Встреча в игре"},
+         {"sposob":"Передача почтой"}
       ]
    },
-   { 
-      "title":"Tera Online (RUS)",       
+   {
+      "title":"Tera Online (RUS)",
       "logo":"img/games/tera/logo.png",
       "background": "url(img/games/tera/background.jpg)",
-      "rating":"1",                    
-      "badge":"Новое", 
+      "rating":"1",
+      "badge":"Новое",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"RU Арборея (PVE)",
@@ -76,21 +76,21 @@
             "name":"RU Эссения (PVE)",
             "cena":"4.5"
          }
-         
+
       ],
       "dostavka":
       [
          {"sposob":"Встреча в игре"}
       ]
    },
-   { 
-      "title":"ArcheAge (RUS)",       
+   {
+      "title":"ArcheAge (RUS)",
       "logo":"img/games/archeage/logo.png",
       "background": "url(img/games/archeage/background.jpg)",
-      "rating":"2",                    
+      "rating":"2",
       "badge":"",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"Луций",
@@ -149,14 +149,14 @@
          {"sposob":"Через Аукцион"}
       ]
    },
-   { 
-      "title":"Aion (4game)",       
+   {
+      "title":"Aion (4game)",
       "logo":"img/games/aion/logo.png",
       "background": "url(img/games/aion/background.jpg)",
-      "rating":"3",                    
-      "badge":"Скидка", 
+      "rating":"3",
+      "badge":"Скидка",
       "valuta":"кинар",
-      "servers": 
+      "servers":
       [
          {
             "name":"Гардарика Асмодиане",
@@ -191,14 +191,14 @@
          {"sposob":"Через частную лавку"}
       ]
    },
-   { 
-      "title":"Aion: Legend",       
+   {
+      "title":"Aion: Legend",
       "logo":"img/games/aion-legend/logo.png",
       "background": "url(img/games/aion-legend/background.jpg)",
-      "rating":"4",                    
+      "rating":"4",
       "badge":"Скидка",
       "valuta":"кинар",
-      "servers": 
+      "servers":
       [
          {
             "name":"Aion: Legend",
@@ -215,14 +215,14 @@
          {"name":"Асмодиане"}
       ]
    },
-   { 
-      "title":"Lineage II Сlassic",       
+   {
+      "title":"Lineage II Сlassic",
       "logo":"img/games/lineage2-classic/logo.png",
       "background": "url(img/games/lineage2-classic/background.jpg)",
-      "rating":"5",                    
-      "badge":"", 
+      "rating":"5",
+      "badge":"",
       "valuta":"кинар",
-      "servers": 
+      "servers":
       [
          {
             "name":"Gran Kain",
@@ -240,14 +240,14 @@
          {"sposob":"Через частную лавку"}
       ]
    },
-      { 
-      "title":"Lineage II (RUS)",       
+      {
+      "title":"Lineage II (RUS)",
       "logo":"img/games/lineage2/logo.png",
       "background": "url(img/games/lineage2/background.jpg)",
-      "rating":"6",                    
-      "badge":"Скидка", 
+      "rating":"6",
+      "badge":"Скидка",
       "valuta":"кинар",
-      "servers": 
+      "servers":
       [
          {
             "name":"Airin",
@@ -277,18 +277,18 @@
          {"sposob":"Через частную лавку"}
       ]
    },
-   { 
-      "title":"Perfect World (RUS)",       
+   {
+      "title":"Perfect World (RUS)",
       "logo":"img/games/perfect-world/logo.png",
       "background": "url(img/games/perfect-world/background.jpg)",
-      "rating":"7",                    
+      "rating":"7",
       "badge":"Скидка",
       "valuta":"кинар",
-      "servers": 
+      "servers":
       [
          {
             "name":"Альтаир",
-            "cena":"0.82"  
+            "cena":"0.82"
          },
          {
             "name":"Вега",
@@ -312,35 +312,35 @@
          },
          {
             "name":"Сириус",
-            "cena":"0.82"  
+            "cena":"0.82"
          },
          {
             "name":"Таразед",
-            "cena":"0.82" 
+            "cena":"0.82"
          },
          {
             "name":"Кассиопея",
-            "cena":"0.82" 
+            "cena":"0.82"
          },
          {
             "name":"Гелиос",
-            "cena":"0.82"  
+            "cena":"0.82"
          },
          {
             "name":"Мира",
-            "cena":"0.82"  
+            "cena":"0.82"
          },
          {
             "name":"Персей",
-            "cena":"9.40"   
+            "cena":"9.40"
          },
          {
             "name":"Андромеда",
-            "cena":"0.82"  
+            "cena":"0.82"
          },
          {
             "name":"Луна",
-            "cena":"14.9"  
+            "cena":"14.9"
          }
       ],
       "dostavka":
@@ -350,14 +350,14 @@
          {"sposob":"Через частную лавку"}
       ]
    },
-   { 
-      "title":"World Of Warcraft",       
+   {
+      "title":"World Of Warcraft",
       "logo":"img/games/world-of-warcraft/logo.png",
       "background": "url(img/games/world-of-warcraft/background.jpg)",
-      "rating":"8",                    
-      "badge":"Скидка", 
+      "rating":"8",
+      "badge":"Скидка",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"Азурегос",
@@ -450,14 +450,14 @@
          {"name":"Орда"}
       ]
    },
-   { 
-      "title":"Path Of Exile RUS",       
+   {
+      "title":"Path Of Exile RUS",
       "logo":"img/games/path-of-exile/logo.png",
       "background": "url(img/games/path-of-exile/background.jpg)",
-      "rating":"9",                    
+      "rating":"9",
       "badge":"",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"Сферы возвышения (Стандарт)",
@@ -473,14 +473,14 @@
          {"sposob":"Встреча в игре"}
       ]
    },
-   { 
-      "title":"Allods Online",       
+   {
+      "title":"Allods Online",
       "logo":"img/games/allods-online/logo.png",
       "background": "url(img/games/allods-online/background.jpg)",
-      "rating":"10",                    
-      "badge":"", 
+      "rating":"10",
+      "badge":"",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"Нить судьбы",
@@ -498,14 +498,14 @@
          {"name":"Империя"}
       ]
    },
-   { 
-      "title":"Dragon Nest",       
+   {
+      "title":"Dragon Nest",
       "logo":"img/games/dragon-nest/logo.png",
       "background": "url(img/games/dragon-nest/background.jpg)",
-      "rating":"11",                    
-      "badge":"", 
+      "rating":"11",
+      "badge":"",
       "valuta":"золота",
-      "servers": 
+      "servers":
       [
          {
             "name":"Тиамат",

@@ -5,5 +5,5 @@ app.controller('GamesController', ['$scope', 'games', function($scope, games) {
          $('button').addClass("disabled");
          $('.alert-success').removeClass("hide");
       };
-    })    
+    })
 }]);

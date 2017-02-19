@@ -1,6 +1,6 @@
 app.controller('GameController', ['$scope', 'games', '$routeParams', function($scope, games, $routeParams) {
-   games.success(function(data) {  
-      $scope.detail = data[$routeParams.id]; 
+   games.success(function(data) {
+      $scope.detail = data[$routeParams.id];
       if (window.matchMedia("(min-width: 767px)").matches) {
          document.getElementById('right-panel').style.background = $scope.detail.background;
          document.getElementById('right-panel').style.backgroundAttachment="fixed";
