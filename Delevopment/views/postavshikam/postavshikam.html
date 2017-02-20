@@ -24,9 +24,8 @@
             </select>
             <textarea pattern="^[а-яА-ЯёЁa-zA-Z0-9/.\s-_?:https??@?]{10,250}$" ng-model="data" placeholder="Укажите сервер и количество игровой валюты. Если вы заходете в игру в определенное время суток - напишите нам об этом" required></textarea>
             <textarea pattern="^[а-яА-ЯёЁa-zA-Z0-9/.\s-_?:https??@?]{5,250}$" ng-model="contacts" placeholder="Оставьте вашие контактные данные: e-mail, vkontakte, skype и т.п. Чем больше контактов тем лучше" required></textarea>
-            <button type="submit" class="btn btn-success">Стать нашим поставщиком
-               <span class="indicator glyphicon glyphicon-ok" ng-hide="postavshik.$invalid"></span>
-               <span class="indicator glyphicon glyphicon-remove" ng-show="postavshik.$invalid"></span>
+            <button type="submit" class="btn btn-success">Стать нашим поставщиком&nbsp;
+               <span class="indicator glyphicon glyphicon-ok" ng-hide="postavshik.$invalid"></span>\<span class="indicator glyphicon glyphicon-remove" ng-show="postavshik.$invalid"></span>
             </button>
          </div>
          <div class="alert alert-danger col-sm-8" ng-show="postavshik.$invalid">
