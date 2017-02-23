@@ -1,9 +1,0 @@
-$.MenuChoise(3, 2);
-VK.Widgets.Group("vk_groups_news", {
-   mode: 2,
-   width: "auto",
-   height: "770px",
-   color1: 'ddd',
-   color2: '33333',
-   color3: '693919'
-}, 127618522);
