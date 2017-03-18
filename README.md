@@ -5,7 +5,7 @@
 ## My first job, which was completed in June 2016.
 This is responsive, cross-browser SPA (single page application) which uses AngularJS 1.X (2 controllers and 1 service) and Bootstrap, data come from a JSON file by AJAX request.
    
-##In February 2017 I did a code review:
+## In February 2017 I did a code review:
 * added css modules;
 * added views modules;
 * added validation and alerts;
@@ -16,6 +16,6 @@ This is responsive, cross-browser SPA (single page application) which uses Angul
 * structure and optimize all images, combined small images in one file;
 * minify all html, js, css code.
 
-##Layout --> Result:
+## Layout --> Result:
 <img src="readme-images/site.png">
 <img src="readme-images/box.png">
