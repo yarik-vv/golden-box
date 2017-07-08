@@ -1,0 +1,14 @@
+{
+  "name": "goldenbox.org",
+  "description": "This is my first job for http://goldenbox.org, with use AngularJS and Bootstrap.",
+  "version": "1.0.0",
+  "homepage": "https://yarik-vv.github.io/goldenbox.org/",
+  "author": "Yarik Vashchuk",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.9"
+  },
+  "private": true
+}
